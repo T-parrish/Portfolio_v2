@@ -1,0 +1,30 @@
+.text-input {
+    border: 1px solid #cacccd;
+    height: 50px;
+    padding: $s-size;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.text-input:focus {
+    outline: none;
+}
+
+.select {
+    @extend .text-input;
+}
+
+.text-area {
+    @extend .text-input;
+    height: 10rem;
+}
+
+.text-input__amount {
+    @extend .text-input;
+    flex-grow: 3;
+    height: 52px;
+}
+
+.text-input__filter {
+    padding: 12px 48px 12px 12px;
+}
