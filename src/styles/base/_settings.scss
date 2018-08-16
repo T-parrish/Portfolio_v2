@@ -1,11 +1,18 @@
 // Place to set global style variables
 // Colors
+$main-color:#119bc9;
+$secondary-color: #2049C7;
+$tertiary-color: #4B20C7;
+$highlight-color: #F89951;
+
+$main-blue:rgb(17, 155, 201);
 $dark-grey: #333333;
+
 $dark-blue: #1f4867;
-$light-blue: rgb(17, 155, 201);
+$light-blue: rgb(113, 220, 255);
 $light-red: rgb(230, 60, 70);
-$off-white: #f7f7f7;
-$grey: #666;
+$off-white: #ffffff;
+$grey: #1f1f1f;
 
 
 // Shadows
@@ -21,7 +28,7 @@ $xl-size: 6.4rem;
 
 // Fonts
 $highlight-font: 'Permanent Marker', cursive;
-$main-font: 'Prompt', sans-serif;
+$main-font: 'Raleway', sans-serif;
 
 // Breakpoints
 $desktop-breakpoint: 1200px;

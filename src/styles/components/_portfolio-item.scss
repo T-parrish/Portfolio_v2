@@ -1,0 +1,60 @@
+.portfolio-item {
+  flex: 1 50%;
+  padding: 0 50px 40px;
+  box-sizing: border-box;
+  min-height: 650px;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  font-family: $main-font;
+}
+
+@media (max-width: $tablet-breakpoint) {
+  .portfolio-item {
+      flex: 1 100%;
+      min-height: initial;
+  }
+}
+
+.portfolio-item-container {
+  max-width: 1150px;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: -60px;
+  z-index: -1;
+}
+
+
+
+.portfolio-item-wide {
+  flex: 1 100%;
+  min-height: 575px;
+}
+
+.portfolio__intro-text {
+  position: relative;
+  margin-bottom: 0px;
+  font-size: 7rem;
+  font-family: $highlight-font;
+  z-index: 10;
+}
+
+.portfolio-item__expensify {
+  background: $main-color;
+  color: rgba(255, 255, 255, .9);
+}
+
+.portfolio-item__devconnector {
+  background: $highlight-color;
+}
+
+.portfolio-item__pizzarovers {
+  background: rgb(113, 220, 255);
+}
+
+.portfolio-item__nodechat {
+  background: $dark-blue;
+}

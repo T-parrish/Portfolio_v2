@@ -5,13 +5,10 @@
 }
 
 .page-header__title {
+    font-size: $l-size;
     font-family: $main-font;
     font-weight: 300;
-    margin: 0;
-    span {
-        font-weight: 700;
-    }
-
+    text-align: center;
 }
 
 .page-header__actions {
