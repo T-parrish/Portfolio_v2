@@ -1,3 +1,20 @@
+.portfolio-item-container {
+  max-width: 1150px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: -60px auto 0 auto;
+  z-index: -1;
+}
+
+.portfolio__popup-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+
 .portfolio-item {
   flex: 1 50%;
   padding: 0 50px 40px;
@@ -12,10 +29,6 @@
   font-family: $main-font;
 }
 
-.portfolio__card-content {
-  transition: all .1s ease-in-out;
-}
-
 @media (max-width: $tablet-breakpoint) {
   .portfolio-item {
       flex: 1 100%;
@@ -23,17 +36,10 @@
   }
 }
 
-.portfolio-item-container {
-  max-width: 1150px;
-  display: flex;
-  flex-flow: row wrap;
-  margin: -60px auto 0 auto;
-  z-index: -1;
-}
-
-.portfolio-item-wide {
-  flex: 1 100%;
-  min-height: 575px;
+.portfolio__card-content {
+  > * {
+    transition: all .1s ease-in-out;
+  }
 }
 
 .portfolio__intro-text {
@@ -42,21 +48,28 @@
   margin: 0 auto;
   font-size: 7rem;
   font-family: $highlight-font;
-  z-index: 10;
-}
-
-.portfolio__popup-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1000;
+  z-index: 2;
 }
 
 .portfolio__social-icons {
   font-size: 4rem;
+  margin: 0 2rem;
   > * {
-    padding: 0 2rem;
+    padding: 0 1rem;
+    color: white;
+    z-index: 12;
   }
+}
+
+.portfolio__social-dropdown {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: black;
+  transition: all .1s ease-in-out;
+}
+
+.portfolio-item-wide {
+  flex: 1 100%;
+  min-height: 575px;
 }

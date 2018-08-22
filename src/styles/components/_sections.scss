@@ -8,3 +8,9 @@
   margin-top: -225px;
   padding: 0px 25px;
 }
+
+@media (max-width: $mobile-breakpoint) {
+  .section__portfolio-cards {
+      padding: 0;
+  }
+}
