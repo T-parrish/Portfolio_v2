@@ -17,9 +17,10 @@ class Projects extends Component {
           name='Expensify' 
           highlight='placeholder'
           synopsis='Built an expense tracking app with React and Firebase'
-          link="http://www.twitter.com/twpearish"
           background="#119bc9"
           color="#ffffff"
+          github='https://github.com/T-parrish/expensify_app'
+          liveLink='https://secure-cliffs-73695.herokuapp.com/'
         />
         <Project 
             name='Dev Connector' 
@@ -28,6 +29,8 @@ class Projects extends Component {
             link="http://www.linkedin.com"
             background="#F89951"
             color="#ffffff"
+            github='https://github.com/T-parrish/MERN_stack'
+            liveLink='https://agile-tundra-60265.herokuapp.com/'
         />
         <div 
           className="portfolio-item portfolio-item-wide portfolio-item__pizzarovers"

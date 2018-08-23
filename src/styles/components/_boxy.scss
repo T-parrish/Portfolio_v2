@@ -1,0 +1,26 @@
+.boxy__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  flex-grow: 1;
+  overflow: hidden;
+  height: 100vh;
+  > * {
+      flex-basis: 150px;
+      flex-grow: 1;
+      box-shadow: 0px 0px 12px $dark-blue;
+      margin: 0.5px;
+      border-radius: 4px;
+      opacity: .65;
+  }
+  @media (max-width: $mobile-breakpoint) {
+      > * {
+          flex-basis: 75px;
+          height: 75px;
+          flex-grow: 1;
+      }
+  }
+}

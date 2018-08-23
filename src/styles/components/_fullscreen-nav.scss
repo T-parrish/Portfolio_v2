@@ -1,0 +1,15 @@
+.fullscreen-nav__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.fullscreen-nav__no-scroll {
+  height: 100%;
+  width: 100%;
+  background: rgb(62, 194, 255);
+  position: fixed;
+}

@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 
 // Potentially want to include an img background for each card
-// with changing opacity on mouseover, also thinking about
-// animating each one of the elements in a different way rather than
-// doing a bucket scaleY transform.
+// --- decided that this doesn't look nearly as good as clean color
+
+// ToDo: build animations for each card element, change placeholder with <hr/>
+// ToDo: Modify code to show github / livelink icons on mobile
 
 class Project extends Component {
   constructor(props) {
@@ -35,7 +36,14 @@ class Project extends Component {
   }
 
   render() {
-    const { name, highlight, synopsis, link, background, color } = this.props
+    const { 
+      name, 
+      highlight, 
+      synopsis, 
+      github, 
+      liveLink, 
+      background, 
+      color } = this.props
 
     return (
       <div 
@@ -54,10 +62,13 @@ class Project extends Component {
               transform: `${this.state.socialAni}`,
             }}
           >
-            <a href="http://www.github.com"><span><i className="fab fa-github"></i></span></a>
-            <span><i className="fas fa-globe"></i></span>
-          </div>
-          
+            <a href={github}>
+              <span><i className="fab fa-github"></i></span>
+            </a>
+            <a href={liveLink}>
+              <span><i className="fas fa-globe"></i></span>
+            </a> 
+          </div>          
         </div>
 
         <div 
