@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import {CSSTransition, TransitionGroup, Transition} from 'react-transition-group'
+import {CSSTransition} from 'react-transition-group'
 import classnames from 'classnames';
-
-import {Link} from 'react-router-dom';
 
 import Header from '../Header';
 import Portfolio from '../portfolio/Portfolio';
@@ -27,7 +25,7 @@ class NavWrapper extends Component {
 
   clickHandler(e) {
     e.preventDefault();
-      this.setState({ fullView: !this.state.fullView, color: '#ffffff'})
+      this.setState({ fullView: !this.state.fullView})
   }
   
 
@@ -35,15 +33,25 @@ class NavWrapper extends Component {
     return (
         <div 
           className= {
-            classnames("fullscreen-nav__animation-wrapper", 
+            classnames('fullscreen-nav__animation-wrapper',
               {'fullscreen-nav__no-scroll': !this.state.fullView})
           }
         >
-          <Header color={this.state.color} clickHandler={this.clickHandler} />
+
+          { this.state.fullView ? 
+            <Header color={'#1f1f1f'} clickHandler={this.clickHandler} /> : 
+            <Header 
+              color={'#ffffff'} 
+              opacity={.93} 
+              textShadow={'0px 0px 5px #3f0ed1'}
+              clickHandler={this.clickHandler} 
+            />
+          }
+          
           {!this.state.fullView ? <CSSTransition
             in={!this.state.fullView}
             appear={true}
-            timeout={400}
+            timeout={500}
             classNames='fade'
           >
             <FullscreenNav />
@@ -52,7 +60,7 @@ class NavWrapper extends Component {
           <CSSTransition
             in={this.state.fullView}
             appear={true}
-            timeout={600}
+            timeout={300}
             classNames='fade'
           >
             <Portfolio />

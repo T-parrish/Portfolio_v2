@@ -12,8 +12,11 @@
   width: 100%;
   position: fixed;
   overflow: hidden;
-  background: rgba(103, 68, 209, .75);
+  background: rgb(103, 68, 209);
+  // background: linear-gradient(270deg, rgb(103, 68, 209), rgb(63, 14, 209));
 }
+
+
 
 .fullscreen-nav__menu {
   position: absolute;
@@ -28,9 +31,24 @@
   align-items: center;
 }
 
-.fullscreen-nav__options {
-  font-size: 30rem;
-  color: white;
+.fullscreen-nav__animated-underscore-wrapper {
+  overflow: hidden;
+}
+
+.fullscreen-nav__animated-underscore-left {
+  width: 100%;
+  border-bottom: 2px solid #ffffff;
+  transition: all .4s ease-in-out;
+}
+
+.fullscreen-nav__animated-underscore-right {
+  width: 100%;
+  border-bottom: 2px solid #ffffff;
+  transition: all .4s ease-in-out;
+}
+
+.fullscreen-nav__animation-wrapper {
+  transition: all .1s ease-in-out;
 }
 
 .fade-appear {
@@ -41,11 +59,6 @@
 .fade-appear .fade-appear-active {
   opacity: 1;
   transform: translateY(0px);
-  transition: all 6s ease-in-out;
-}
-
-.fullscreen-nav__animation-wrapper {
-  transition: all 200ms ease-in-out;
 }
 
 .fade-exit {

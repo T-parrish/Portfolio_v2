@@ -18,7 +18,7 @@ class FullscreenNav extends Component {
     });
 
     return (
-      <div className="fullscreen-nav__menu">
+      <div className="fullscreen-nav__menu fullscreen-nav__animation-wrapper">
         {navItems}
       </div>
     )
