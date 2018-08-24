@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Projects from './Projects';
+import classnames from 'classnames';
 
 // Main wrapper for portfolio section of webpage
 // ToDo: add a component for project cards
@@ -9,8 +10,9 @@ import Projects from './Projects';
 
 class Portfolio extends Component {
   render() {
+
     return (
-      <div className="main-wrapper">
+      <div className= 'fullscreen-nav__animation-wrapper'>
         <div className="section__portfolio-intro">
           <h1 className="page-header__title centered">
             I like to make things

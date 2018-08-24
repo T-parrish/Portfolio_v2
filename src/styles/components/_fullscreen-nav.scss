@@ -10,6 +10,58 @@
 .fullscreen-nav__no-scroll {
   height: 100%;
   width: 100%;
-  background: rgb(62, 194, 255);
   position: fixed;
+  overflow: hidden;
+  background: rgba(103, 68, 209, .75);
+}
+
+.fullscreen-nav__menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen-nav__options {
+  font-size: 30rem;
+  color: white;
+}
+
+.fade-appear {
+  opacity: 0;
+  transform: translateY(150px);
+}
+
+.fade-appear .fade-appear-active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 6s ease-in-out;
+}
+
+.fullscreen-nav__animation-wrapper {
+  transition: all 200ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 0;
+}
+
+.fade-exit-done {
+  opacity: 0;
+  z-index: -100;
+}
+
+.fade-enter {
+  opacity: 1;
+}
+
+.fade-enter-done {
+  opacity: 1;
+  z-index: 5;
 }

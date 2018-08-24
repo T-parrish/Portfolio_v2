@@ -1,35 +1,28 @@
 import React, { Component } from 'react'
-
-import classnames from 'classnames';
-import Boxy from './Boxy';
-
-// <div className= {
-//   classnames( 'fullscreen-nav__wrapper',
-//     {'fullscreen-nav__no-scroll': this.state.isActive,
-//   })
-// }>
+import FullscreenNavOptions from './FullscreenNavOptions';
 
 class FullscreenNav extends Component {
-  constructor(props) {
-    super(props);
+  constructor(props){
+    super(props)
     this.state = {
-      isActive: false
+      Portfolio: '/portfolio',
+      About: '/about',
+      Blog: '/blog',
+      Music: '/music',
     }
   }
 
-  componentDidMount() {
-    console.log('component mounted')
-    this.setState({isActive: true})
-  }
-
   render() {
+    const navItems = Object.keys(this.state).map((key, i) => {
+      return <FullscreenNavOptions key={i} linkText={key} link={this.state[key]}/>
+    });
+
     return (
-      <div>
-        <span>this is my boomstick</span>
+      <div className="fullscreen-nav__menu">
+        {navItems}
       </div>
     )
   }
 }
 
-export default FullscreenNav
-
+export default FullscreenNav;

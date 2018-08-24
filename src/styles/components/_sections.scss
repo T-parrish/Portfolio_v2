@@ -10,6 +10,11 @@
   position: relative;
 }
 
+.main-wrapper {
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+
 @media (max-width: $mobile-breakpoint) {
   .section__portfolio-cards {
       padding: 0;

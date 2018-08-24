@@ -1,15 +1,9 @@
 import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
-import PrivateDashboard from '../components/PrivateDashboard.js';
-import HelpPage from '../components/HelpPage.js';
 import PageNotFound from '../components/PageNotFound.js';
-import LoginPage from '../components/LoginPage.js';
-import PrivateRoute from './PrivateRoute.js';
-import PublicRoute from './PublicRoute.js';
 
-import { Header } from '../components/Header';
-import Portfolio from '../components/portfolio/Portfolio';
+import NavWrapper from '../components/fullscreen-nav/NavWrapper';
 
 export const history = createHistory();
 
@@ -17,13 +11,12 @@ export const history = createHistory();
 const AppRouter = () => (
 	<Router history={history}>
 		<div>
-			<Header />
 			<Switch>
-				<PublicRoute path="/" component={Portfolio} exact={true} />
+				<Route path="/" component={NavWrapper} exact={true} />
 				<Route component={PageNotFound} />
 			</Switch>
 		</div>
-    </Router>
+  </Router>
 );
 
 export default AppRouter;
