@@ -2,11 +2,17 @@ import React, { Component } from 'react';
 
 import Project from './Project';
 
-// ToDo: create project card for expensify
-// ToDo: create project card for Dev connector
-// ToDo: create project card for Node Chat app
-// ToDo: create project card for pizza rovers
-// ToDo: create project card for et and me
+// Creates a project card default 2 per row on desktop
+// with the following options / fields:
+
+// name: name of the project / title of card
+// highlight: work in progress
+// synopsis: a brief explanation of project
+// background: background color of card
+// color: color of text
+// github: link to github repo on github popup menu
+// liveLink: link to a live example of the website
+// wide: boolean, sets project card width to 100% on Desktop 
 
 
 class Projects extends Component {
@@ -23,23 +29,27 @@ class Projects extends Component {
           liveLink='https://secure-cliffs-73695.herokuapp.com/'
         />
         <Project 
-            name='Dev Connector' 
-            highlight='placeholder'
-            synopsis='Built a social network on the MERN stack'
-            link="http://www.linkedin.com"
-            background="#F89951"
-            color="#ffffff"
-            github='https://github.com/T-parrish/MERN_stack'
-            liveLink='https://agile-tundra-60265.herokuapp.com/'
+          name='Dev Connector' 
+          highlight='placeholder'
+          synopsis='Built a social network on the MERN stack'
+          link="http://www.linkedin.com"
+          background="#F89951"
+          color="#ffffff"
+          github='https://github.com/T-parrish/MERN_stack'
+          liveLink='https://agile-tundra-60265.herokuapp.com/'
         />
-        <div 
-          className="portfolio-item portfolio-item-wide portfolio-item__pizzarovers"
-          style={{
-            background: 'linear-gradient(to bottom, #1181a7 0%,#119bc9 100%)', 
-            color:'#ffffff'
-          }}>
-          <h1>hello</h1>
-        </div>
+
+        <Project 
+          name='Dev Connector' 
+          highlight='placeholder'
+          synopsis='Built a social network on the MERN stack'
+          link="http://www.linkedin.com"
+          background="#0d627e"
+          color="#ffffff"
+          github='https://github.com/T-parrish/MERN_stack'
+          liveLink='https://agile-tundra-60265.herokuapp.com/'
+          wide='true'
+        />
 
       </div>
     )

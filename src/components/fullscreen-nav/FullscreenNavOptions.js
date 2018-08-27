@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
 
+// Simple component that includes some custom mouse triggered animations
+
 class FullscreenNavOptions extends Component {
   constructor(props) {
     super(props);

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Projects from './Projects';
+import About from '../about/About';
 import classnames from 'classnames';
 
 // Main wrapper for portfolio section of webpage
@@ -23,6 +24,12 @@ class Portfolio extends Component {
             <h2>Stuff</h2>
           </div>
           <Projects />
+        </div>
+        <div className="section__about-me">
+          <div className="portfolio__intro-text">
+            <h2>About</h2>
+          </div>
+          <About />
         </div>
       </div>
     )

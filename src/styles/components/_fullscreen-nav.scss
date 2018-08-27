@@ -12,7 +12,7 @@
   width: 100%;
   position: fixed;
   overflow: hidden;
-  background: rgb(103, 68, 209);
+  background: #6744d1;
   // background: linear-gradient(270deg, rgb(103, 68, 209), rgb(63, 14, 209));
 }
 
@@ -29,21 +29,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: $main-font;
+  text-shadow: 0px 1px 2px #3f0ed1;
 }
 
 .fullscreen-nav__animated-underscore-wrapper {
   overflow: hidden;
+  transform: translateY(-9px);
 }
 
 .fullscreen-nav__animated-underscore-left {
   width: 100%;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
   transition: all .4s ease-in-out;
 }
 
 .fullscreen-nav__animated-underscore-right {
   width: 100%;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
   transition: all .4s ease-in-out;
 }
 

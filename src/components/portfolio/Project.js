@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import classnames from 'classnames';
 
 // Potentially want to include an img background for each card
 // --- decided that this doesn't look nearly as good as clean color
@@ -43,11 +44,16 @@ class Project extends Component {
       github, 
       liveLink, 
       background, 
-      color } = this.props
+      color,
+      wide,
+     } = this.props
 
     return (
       <div 
-        className="portfolio-item" 
+        className= {
+          classnames("portfolio-item", 
+            {'portfolio-item-wide' : wide})
+          }
         style={{background: `${background}`}}
       >
         

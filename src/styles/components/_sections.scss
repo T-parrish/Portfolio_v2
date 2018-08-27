@@ -10,13 +10,18 @@
   position: relative;
 }
 
+.section__about-me {
+  margin-top: 100px;
+  padding: 0px 25px;
+}
+
 .main-wrapper {
   position: absolute;
   transition: all 1s ease-in-out;
 }
 
 @media (max-width: $mobile-breakpoint) {
-  .section__portfolio-cards {
+  .section__portfolio-cards, .section__about-me {
       padding: 0;
   }
 }
