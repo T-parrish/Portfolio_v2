@@ -45,6 +45,11 @@
   position: relative;
   height: 670px;
   width: 100%;
-  border: 2px solid $dark-grey;
   top: 100px;
+}
+
+.about__details {
+  font-family: $main-font;
+  padding: 0 2rem;
+
 }

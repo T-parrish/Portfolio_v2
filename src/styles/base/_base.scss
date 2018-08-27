@@ -10,6 +10,14 @@ body {
     background: $off-white;
 }
 
+hr {
+    width: 50px;
+    color: #ffffff;
+    opacity: .9;
+    height: 1px;
+
+}
+
 .is-active {
     color: blueviolet;
     font-weight: bold;

@@ -21,7 +21,7 @@ class Portfolio extends Component {
         </div>
         <div className="section__portfolio-cards">
           <div className="portfolio__intro-text">
-            <h2>Stuff</h2>
+            <h2>Web</h2>
           </div>
           <Projects />
         </div>

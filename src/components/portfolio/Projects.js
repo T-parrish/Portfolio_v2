@@ -20,19 +20,17 @@ class Projects extends Component {
     return (
       <div className="portfolio-item-container">
         <Project 
-          name='Expensify' 
-          highlight='placeholder'
-          synopsis='Built an expense tracking app with React and Firebase'
+          name='Node Chat' 
+          synopsis='Multi-user Chat app built with Node.js, and webhooks, deployed on Heroku'
           background="#119bc9"
           color="#ffffff"
-          github='https://github.com/T-parrish/expensify_app'
-          liveLink='https://secure-cliffs-73695.herokuapp.com/'
+          github='https://github.com/T-parrish/node-chat-app'
+          liveLink='https://lit-cliffs-45276.herokuapp.com/'
         />
         <Project 
           name='Dev Connector' 
           highlight='placeholder'
-          synopsis='Built a social network on the MERN stack'
-          link="http://www.linkedin.com"
+          synopsis='Social network for developers, built using MongoDB, Mongoose, Node, Express, React, and deployed with Heroku. Authentication handled with JWT, Passport, and Bcrypt'
           background="#F89951"
           color="#ffffff"
           github='https://github.com/T-parrish/MERN_stack'
@@ -40,14 +38,12 @@ class Projects extends Component {
         />
 
         <Project 
-          name='Dev Connector' 
-          highlight='placeholder'
-          synopsis='Built a social network on the MERN stack'
-          link="http://www.linkedin.com"
+          name='Expensify' 
+          synopsis='Multi-user expense tracking app built with Node, Express, React, and Firebase. Authentication handled with Google oAuth, JWT, and Bcrypt. Test suite written with Jest and Enzyme, deployed on Heroku.'
           background="#0d627e"
           color="#ffffff"
-          github='https://github.com/T-parrish/MERN_stack'
-          liveLink='https://agile-tundra-60265.herokuapp.com/'
+          github='https://github.com/T-parrish/expensify_app'
+          liveLink='https://secure-cliffs-73695.herokuapp.com/'
           wide='true'
         />
 

@@ -84,7 +84,7 @@ class Project extends Component {
           <h3 style={{fontSize:'50px', transform:`${this.state.headerAni}`}}> {name} </h3>
           
           <div className="project-highlight">
-            <h4>{highlight}</h4>
+            <hr />
           </div>
           
           <div className="project-synopsis">
