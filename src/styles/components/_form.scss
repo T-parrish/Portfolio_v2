@@ -23,22 +23,22 @@
     padding: 12px 24px;
     font-family: $main-font;
     border-radius: 15px;
-    background: #F69958;
+    background: #209CC7;
     color: white;
     font-size: 1.6rem;
     // border: 1px solid #ffffff;
-    box-shadow: 0px 4px darken(#F69958, 10%);
+    box-shadow: 0px 4px darken(#209CC7, 10%);
     cursor: pointer;
     outline: none;
 }
 
 .form__button:hover {
-    box-shadow: 0px 3px darken(#F69958, 15%);
+    box-shadow: 0px 3px darken(#209CC7, 15%);
     top: 1px;
 }
 
 .form__button:active {
-    box-shadow: 0px 0px darken(#F69958, 15%);
+    box-shadow: 0px 0px darken(#209CC7, 15%);
     top: 4px;
 }
 
