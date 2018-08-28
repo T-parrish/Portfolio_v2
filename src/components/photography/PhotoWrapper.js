@@ -15,7 +15,6 @@ class PhotoWrapper extends Component {
   componentDidMount() {
     let urlArray = []
     const INSTA_TOKEN = tokens.INSTA_TOKEN
-    console.log(INSTA_TOKEN)
 
     axios.get(`https://api.instagram.com/v1/users/self/media/recent/?access_token=${INSTA_TOKEN}`)
       .then(res => {
