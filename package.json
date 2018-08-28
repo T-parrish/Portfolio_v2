@@ -1,6 +1,9 @@
 {
   "name": "portfolio_v2",
   "version": "1.0.0",
+  "engines": {
+    "yarn": "1.5.1"
+  },
   "main": "index.js",
   "author": "Taylor Parrish",
   "license": "MIT",
