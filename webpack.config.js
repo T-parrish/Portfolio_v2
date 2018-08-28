@@ -41,11 +41,7 @@ module.exports = (env) => {
             }]
         },
         plugins: [
-            new webpack.DefinePlugin({           
-                NODE_ENV: JSON.stringify(process.env.NODE_ENV),      
-                INSTA_TOKEN: JSON.stringify(process.env.INSTA_TOKEN),
-                INSTA_CLIENT_ID: JSON.stringify(process.env.INSTA_CLIENT_ID),
-              }),
+            new webpack.EnvironmentPlugin(['NODE_ENV', 'INSTA_TOKEN', 'INSTA_CLIENT_ID']),
             CSSExtract,
         ], 
         devtool: isProduction ? 'source-map' : 'inline-source-map',
