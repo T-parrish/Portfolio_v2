@@ -5,4 +5,5 @@ public/styles.css
 public/styles.css.map
 .env.test
 .env.development
-/src/config/keys.js
+config/keys.js
+

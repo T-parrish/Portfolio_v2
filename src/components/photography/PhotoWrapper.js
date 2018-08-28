@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import Photo from './Photo';
 
-import tokens from '../../config/keyRouter';
+import tokens from '../../../config/keyRouter';
 
 class PhotoWrapper extends Component {
   constructor(props) {
