@@ -28,6 +28,8 @@ class About extends Component {
     this.setState({idx: parseInt(e.target.id), fade: true})
   }
 
+
+
   getPost(idx) {
     return aboutData.find(post => post.id === idx)
   }

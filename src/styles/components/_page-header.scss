@@ -5,12 +5,28 @@
 }
 
 .page-header__title {
-    font-size: $l-size;
+    font-size: 3.5rem;
     font-family: $main-font;
     font-weight: 300;
     text-align: center;
+    white-space: nowrap;
+}
+
+.page-header__ampersand {
+    font-family: $amp-font;
+    font-size: 3.65rem;
 }
 
 .page-header__actions {
     margin-top: $m-size;
+}
+
+@media(max-width:$mobile-breakpoint) {
+    .page-header__title{
+        font-size: 2rem;
+        white-space: normal;
+    }
+    .page-header__ampersand {
+        font-size: 2.6rem;
+    }
 }

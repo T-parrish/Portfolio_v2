@@ -15,13 +15,26 @@
   padding: 0px 25px;
 }
 
+.section__photography {
+  margin-top: 100px;
+  padding: 0px 25px;
+}
+
+.section__contact {
+  margin-top: 100px;
+  padding: 0px 25px;
+}
+
 .main-wrapper {
   position: absolute;
   transition: all 1s ease-in-out;
 }
 
 @media (max-width: $mobile-breakpoint) {
-  .section__portfolio-cards, .section__about-me {
+  .section__portfolio-cards, .section__about-me, .section__photography {
       padding: 0;
+  }
+  .section__contact {
+    padding: 5px;
   }
 }

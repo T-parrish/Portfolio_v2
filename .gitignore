@@ -5,3 +5,4 @@ public/styles.css
 public/styles.css.map
 .env.test
 .env.development
+/keys.js

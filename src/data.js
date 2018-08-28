@@ -1,34 +1,35 @@
 const aboutData = [
   {
     id: 1,
-    title: 'Early Days',
-    p1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales sit amet libero nec sollicitudin. Nulla laoreet massa tortor, ut tempor ex rhoncus sit amet. Suspendisse potenti. Curabitur eget aliquam metus, elementum vulputate nibh. Pellentesque ornare congue lectus sit amet blandit. Sed turpis arcu, sagittis sit amet arcu sed, vulputate pulvinar justo. In hac habitasse platea dictumst.',
-    p2: 'Morbi et euismod nisi. Aliquam interdum, nisl sit amet pretium egestas, eros ipsum venenatis dolor, a pretium nisi lorem vitae libero. Nunc malesuada lacus sollicitudin purus suscipit placerat. Proin elementum tristique leo, cursus pretium risus efficitur at. Cras lectus ante, facilisis eget eleifend et, consectetur et orci. Quisque fringilla orci eu condimentum tincidunt. Sed accumsan tortor turpis, id ultricies nisl luctus quis. Duis lacinia tellus et erat consectetur, eu varius mauris porttitor.',
-    p3:'Aliquam erat volutpat. Nam dolor elit, sagittis eu urna vel, rutrum consectetur arcu. Sed ac volutpat tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi convallis sodales ex, eget feugiat lectus. Phasellus porta velit non orci malesuada, ut vestibulum lacus vestibulum. Curabitur in scelerisque magna, vitae rutrum urna. Maecenas non fringilla ex, eget ullamcorper felis. In hac habitasse platea dictumst. Aenean interdum sed tellus in luctus. Suspendisse ut lacus elit. Aliquam sed quam ultrices elit pharetra posuere.'
+    title: 'Bilingual',
+    p1: "Spent three years living in Montpellier, France with my family and attended public school for two years.",
+    p2: "Since then, I've maintained conversational fluency through coursework, Duolingo, speaking with friends, and occasional translation work.",
+    // img: "url('/images/textureBg.jpg')",
+    bgfill:'#209CC7'
   }, {
     id: 2,
-    title: 'France',
-    p1: 'Aliquam erat volutpat. Nam dolor elit, sagittis eu urna vel, rutrum consectetur arcu. Sed ac volutpat tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi convallis sodales ex, eget feugiat lectus. Phasellus porta velit non orci malesuada, ut vestibulum lacus vestibulum. Curabitur in scelerisque magna, vitae rutrum urna. Maecenas non fringilla ex, eget ullamcorper felis. In hac habitasse platea dictumst. Aenean interdum sed tellus in luctus. Suspendisse ut lacus elit. Aliquam sed quam ultrices elit pharetra posuere.',
-    p2: 'Donec vitae ligula augue. Aenean a nisi quis felis hendrerit tempor ut in nibh. Ut vel gravida lorem, a suscipit dui. Phasellus varius nibh vitae finibus bibendum. Curabitur ex quam, molestie vel convallis eu, condimentum sed turpis. Vestibulum pulvinar tellus et augue egestas congue. Mauris non venenatis felis. Aenean tristique nulla non nibh porttitor, et suscipit ante facilisis.',
-    p3:'Morbi et euismod nisi. Aliquam interdum, nisl sit amet pretium egestas, eros ipsum venenatis dolor, a pretium nisi lorem vitae libero. Nunc malesuada lacus sollicitudin purus suscipit placerat. Proin elementum tristique leo, cursus pretium risus efficitur at. Cras lectus ante, facilisis eget eleifend et, consectetur et orci. Quisque fringilla orci eu condimentum tincidunt. Sed accumsan tortor turpis, id ultricies nisl luctus quis. Duis lacinia tellus et erat consectetur, eu varius mauris porttitor.'
+    title: 'Musician',
+    p1: 'Notable achievements: principal percussionist for the El Camino Youth Orchestra and the El Camino Wind Ensemble, 3rd place in world with Oregon Crusaders at WGI finals in Ohio.',
+    p2: 'Co-founded a multimedia production / recording studio in college that became cash-positive after 6 months of operations.',
+    bgfill:'#209CC7'
   }, {
     id: 3,
-    title: 'College',
-    p1: 'Donec vitae ligula augue. Aenean a nisi quis felis hendrerit tempor ut in nibh. Ut vel gravida lorem, a suscipit dui. Phasellus varius nibh vitae finibus bibendum. Curabitur ex quam, molestie vel convallis eu, condimentum sed turpis. Vestibulum pulvinar tellus et augue egestas congue. Mauris non venenatis felis. Aenean tristique nulla non nibh porttitor, et suscipit ante facilisis.',
-    p2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales sit amet libero nec sollicitudin. Nulla laoreet massa tortor, ut tempor ex rhoncus sit amet. Suspendisse potenti. Curabitur eget aliquam metus, elementum vulputate nibh. Pellentesque ornare congue lectus sit amet blandit. Sed turpis arcu, sagittis sit amet arcu sed, vulputate pulvinar justo. In hac habitasse platea dictumst.',
-    p3:'Morbi et euismod nisi. Aliquam interdum, nisl sit amet pretium egestas, eros ipsum venenatis dolor, a pretium nisi lorem vitae libero. Nunc malesuada lacus sollicitudin purus suscipit placerat. Proin elementum tristique leo, cursus pretium risus efficitur at. Cras lectus ante, facilisis eget eleifend et, consectetur et orci. Quisque fringilla orci eu condimentum tincidunt. Sed accumsan tortor turpis, id ultricies nisl luctus quis. Duis lacinia tellus et erat consectetur, eu varius mauris porttitor.'
+    title: 'Adventurous',
+    p1: 'Spent 12 months volunteering, freelancing, house-sitting, and learning to code while traveling around the world.',
+    p2: 'Started a photography project with my girlfriend Emily that now has over 13k followers on Instagram and has provided us with opportunities to work with companies including Sudio, and Travelibro.',
+    bgfill:'#209CC7'
   }, {
     id: 4,
-    title: 'Beginning of Career',
-    p1: 'Aliquam erat volutpat. Nam dolor elit, sagittis eu urna vel, rutrum consectetur arcu. Sed ac volutpat tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi convallis sodales ex, eget feugiat lectus. Phasellus porta velit non orci malesuada, ut vestibulum lacus vestibulum. Curabitur in scelerisque magna, vitae rutrum urna. Maecenas non fringilla ex, eget ullamcorper felis. In hac habitasse platea dictumst. Aenean interdum sed tellus in luctus. Suspendisse ut lacus elit. Aliquam sed quam ultrices elit pharetra posuere.',
-    p2: 'Morbi et euismod nisi. Aliquam interdum, nisl sit amet pretium egestas, eros ipsum venenatis dolor, a pretium nisi lorem vitae libero. Nunc malesuada lacus sollicitudin purus suscipit placerat. Proin elementum tristique leo, cursus pretium risus efficitur at. Cras lectus ante, facilisis eget eleifend et, consectetur et orci. Quisque fringilla orci eu condimentum tincidunt. Sed accumsan tortor turpis, id ultricies nisl luctus quis. Duis lacinia tellus et erat consectetur, eu varius mauris porttitor.',
-    p3:'Donec vitae ligula augue. Aenean a nisi quis felis hendrerit tempor ut in nibh. Ut vel gravida lorem, a suscipit dui. Phasellus varius nibh vitae finibus bibendum. Curabitur ex quam, molestie vel convallis eu, condimentum sed turpis. Vestibulum pulvinar tellus et augue egestas congue. Mauris non venenatis felis. Aenean tristique nulla non nibh porttitor, et suscipit ante facilisis.'
+    title: 'Professional',
+    p1: 'As an account manager at Twitter, I was responsible for over $1.2 million dollars of quarterly advertising revenue.',
+    p2: 'To hit these numbers, I taught myself SQL and Python to provide my team-mates with lead lists and selling points backed by data.',
+    bgfill:'#209CC7'
   }, {
     id: 5,
-    title: 'Around the world in 365 days',
-    p1: 'Vestibulum dui libero, luctus et cursus nec, facilisis ac neque. Aenean tempor eu elit quis blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec eget ipsum orci. In sagittis risus id ante scelerisque, ut hendrerit tortor efficitur. Fusce quis ullamcorper massa. Vivamus posuere eros et lacus bibendum, at suscipit mi suscipit. Sed auctor magna sit amet scelerisque tempor. Ut massa nulla, finibus nec ultricies vitae, efficitur at leo. Nulla tempus ligula a arcu porttitor viverra. Praesent iaculis semper pellentesque.',
-    p2: 'Aenean tincidunt posuere ligula, ut pharetra lacus auctor et. Vivamus viverra efficitur lacinia. Cras non imperdiet ipsum. Sed nunc sem, lacinia non urna eget, volutpat tincidunt ligula. Vivamus maximus, tortor id tempus varius, lectus tellus aliquet diam, eget accumsan ipsum nibh sed risus. Sed bibendum ornare consectetur. Aenean pretium aliquam urna. Curabitur dapibus fringilla nisi, id pharetra nunc tincidunt quis. Maecenas sed vestibulum magna, eleifend venenatis est. Curabitur auctor dolor quis aliquet facilisis. Aenean interdum, neque vel placerat lobortis, nulla dolor rutrum eros, vel vulputate metus mi quis turpis. Praesent elementum massa non fermentum pretium. Proin nec viverra nulla. Etiam dapibus ornare pretium.',
-    p3:'Donec ultrices ut sem ac tincidunt. Nulla fringilla sapien vel ullamcorper lacinia. Suspendisse potenti. Nunc libero quam, fermentum eget aliquet ut, cursus mollis metus. Fusce pulvinar feugiat libero. Nam ultricies tortor nec enim aliquam, id cursus enim vestibulum. Nulla consectetur nulla at ante tempor, nec condimentum sem consequat. Mauris varius dolor nec mi ultricies convallis eget vitae neque. Nullam commodo risus ac imperdiet varius. Sed mattis nisi nec malesuada condimentum. Vestibulum aliquet arcu libero, facilisis condimentum est aliquam in. Maecenas at porttitor augue. Morbi et quam augue. Nulla egestas sem vel justo iaculis maximus. Duis id gravida turpis. Pellentesque pulvinar dui ex, vitae fermentum lacus interdum at.'
+    title: 'Adaptive',
+    p1: 'Recognizing that my passion for Data Science and Data Engineering was constrained to Jupyter Notebooks, I started learning everything I could about modern web tech, focusing primarily on Node and React.',
+    p2: "Next up: I'd like to put my diverse set of skills to use on projects aimed at bettering people's lives.",
+    bgfill:'#209CC7'
   }
 ]
 
