@@ -30,7 +30,7 @@ class Form extends Component {
       message: this.state.message
     }
     axios.post('/api/messages', messageData)
-      // .then(res => console.log(res))
+      .then(res => console.log(res))
       .then(this.setState({submitted: !this.state.submitted}))
       .catch(err => this.setState({errors: err}))
 
