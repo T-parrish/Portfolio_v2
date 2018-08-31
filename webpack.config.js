@@ -7,6 +7,17 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 module.exports = (env) => {
     const isProduction = env === 'production';
     const CSSExtract = new ExtractTextPlugin('styles.css');
+    let ENVplugin
+
+    if (isProduction) {
+        ENVplugin = new webpack.EnvironmentPlugin(['NODE_ENV', 'INSTA_TOKEN', 'INSTA_CLIENT_ID'])
+    } else {
+        ENVplugin = new webpack.EnvironmentPlugin({
+            NODE_ENV: 'development', // use 'development' unless process.env.NODE_ENV is defined
+            DEBUG: false
+        });
+    }
+
 
     return {
         entry: ['babel-polyfill', './src/app.js'],
@@ -41,7 +52,7 @@ module.exports = (env) => {
             }]
         },
         plugins: [
-            new webpack.EnvironmentPlugin(['NODE_ENV', 'INSTA_TOKEN', 'INSTA_CLIENT_ID']),
+            ENVplugin,
             CSSExtract,
         ], 
         devtool: isProduction ? 'source-map' : 'inline-source-map',
