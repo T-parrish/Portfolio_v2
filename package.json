@@ -10,10 +10,11 @@
   "license": "MIT",
   "scripts": {
     "dev-server": "webpack-dev-server",
+    "concurr" : "concurrently \"yarn run start\" \"yarn run dev-server\"",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
-    "start": "node server/server.js",
+    "start": "nodemon server/server.js",
     "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
@@ -28,6 +29,7 @@
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.18.3",
     "classnames": "^2.2.6",
+    "concurrently": "^4.0.1",
     "css-loader": "^0.28.11",
     "express": "^4.16.3",
     "extract-text-webpack-plugin": "4.0.0-beta.0",

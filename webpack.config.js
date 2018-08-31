@@ -10,14 +10,20 @@ module.exports = (env) => {
     let ENVplugin
 
     if (isProduction) {
-        ENVplugin = new webpack.EnvironmentPlugin(['NODE_ENV', 'INSTA_TOKEN', 'INSTA_CLIENT_ID'])
+        ENVplugin = new webpack.EnvironmentPlugin(
+            ['NODE_ENV', 
+            'INSTA_TOKEN', 
+            'INSTA_CLIENT_ID', 
+            'MONGO_URI',
+            'PULL_KEY'
+            ]
+        )
     } else {
         ENVplugin = new webpack.EnvironmentPlugin({
-            NODE_ENV: 'development', // use 'development' unless process.env.NODE_ENV is defined
+            NODE_ENV: 'development', 
             DEBUG: false
         });
     }
-
 
     return {
         entry: ['babel-polyfill', './src/app.js'],
@@ -59,7 +65,10 @@ module.exports = (env) => {
         devServer: {
             contentBase: path.join(__dirname, 'public'),
             historyApiFallback: true,
-            publicPath: '/dist/'
+            publicPath: '/dist/',
+            proxy: {
+                '/api/*': 'http://localhost:3000'
+            }
         }
     };
 };

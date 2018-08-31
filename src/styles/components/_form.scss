@@ -63,6 +63,11 @@
     }
 }
 
+.form__thank-you {
+    margin: $s-size 0 0 0;
+    font-family: $main-font;
+}
+
 
 @media(max-width:$tablet-breakpoint) {
     .form__element {
