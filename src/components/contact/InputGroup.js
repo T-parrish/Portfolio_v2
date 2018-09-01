@@ -6,19 +6,24 @@ const InputGroup = ({
   placeholder,
   value,
   onChange,
+  errors,
+  disabled
 }) => {
+
   return (
-    <div className="form__element">
+    <div className={classnames("form__element")}>
       <input
         className= {
-          classnames('')
+          classnames({'form__element--disabled' : disabled})
         }
         placeholder={placeholder}
         name={name}
         value={value}
         onChange={onChange}
         autoComplete='off'
+        style={{}}
       />
+      {errors && (<div className="form__invalid-feedback">{errors}</div>)}
     </div>
   )
 }

@@ -7,12 +7,14 @@ const TextAreaGroup = ({
   placeholder,
   value,
   onChange,
+  errors,
+  disabled
 }) => {
   return (
     <div className="form__element">
       <textarea
         className= {
-          classnames('')
+          classnames({'form__element--disabled' : disabled})
         }
         placeholder={placeholder}
         name={name}
@@ -20,6 +22,7 @@ const TextAreaGroup = ({
         onChange={onChange}
         autoComplete='off'
       />
+      {errors && (<div className="form__invalid-feedback">{errors}</div>)}
     </div>
   )
 }

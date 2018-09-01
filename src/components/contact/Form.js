@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import classnames from 'classnames';
+
 import InputGroup from './InputGroup';
 import TextAreaGroup from './TextAreaGroup';
+
 
 class Form extends Component {
   constructor(props) {
@@ -12,8 +15,9 @@ class Form extends Component {
       email: '',
       message: '',
       submitted: false,
-      errors: {}
+      errors: {},
     }
+
     this.onChange = this.onChange.bind(this)
     this.onSubmit = this.onSubmit.bind(this)
   }
@@ -29,55 +33,65 @@ class Form extends Component {
       email: this.state.email,
       message: this.state.message
     }
-    axios.post('/api/messages', messageData)
-      // .then(res => console.log(res))
-      .then(this.setState({submitted: !this.state.submitted}))
-      .catch(err => this.setState({errors: err}))
 
+    axios
+      .post('/api/messages', messageData)
+      .then(() => this.setState({
+        errors: {}, 
+        submitted: true,
+        name: '',
+        email: '',
+        message: '', })
+      )
+      .catch(error => this.setState({errors: error.response.data}))
   }
 
   render() {
-    let formFields 
+    const {errors, submitted} = this.state
 
-    if (!this.state.submitted) {
-      formFields = (
+    return (
+      <div className="form__wrapper">
+        {this.state.submitted ? 
+          (<div className="form__contact-form">
+            <h1 className="form__thank-you">Thank you!</h1>
+          </div>) : null}
         <form onSubmit={this.onSubmit} className="form__contact-form">
           <InputGroup 
             placeholder="Name"
             name="name"
             value={this.state.name}
             onChange={this.onChange}
+            errors={errors.name}
+            disabled={submitted}
           />
           <InputGroup 
             placeholder="Email"
             name="email"
             value={this.state.email}
             onChange={this.onChange}
+            errors={errors.email}
+            disabled={submitted}
           />
           <TextAreaGroup 
             placeholder="Send me a message <3"
             name='message'
             value={this.state.message}
             onChange={this.onChange}
+            errors={errors.message}
+            disabled={submitted}
           />
-          <input 
+          {submitted ? <input 
             type='submit'
             value='Submit' 
-            className="form__button"
-          />
-        </form>
-      )
-    } else {
-      formFields = (
-        <div className="form__contact-form">
-          <h1 className="form__thank-you">Thank you!</h1>
-        </div>
-      )
-    }
+            className={classnames({'form__button--disabled' : submitted})}
+            disabled
+            /> : <input 
+                    type='submit'
+                    value='Submit' 
+                    className={classnames("form__button")}
+                  /> }
 
-    return (
-      <div className="form__wrapper">
-        {formFields}
+        </form>
       </div>
     )
   }
