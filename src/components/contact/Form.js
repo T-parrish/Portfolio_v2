@@ -7,6 +7,10 @@ import InputGroup from './InputGroup';
 import TextAreaGroup from './TextAreaGroup';
 
 
+// ToDo: fix UX and add spinner / 'submitting' text to display
+// after the submit button has been pressed, change to 'submitted'
+// or 'thank you' after successful submit 
+
 class Form extends Component {
   constructor(props) {
     super(props);

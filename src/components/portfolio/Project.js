@@ -81,13 +81,13 @@ class Project extends Component {
           className="portfolio__card-content"
           style={{color: `${color}`}}
         >
-          <h3 style={{fontSize:'50px', transform:`${this.state.headerAni}`}}> {name} </h3>
+          <h3 className="portfolio__card-text" style={{fontSize:'50px', transform:`${this.state.headerAni}`}}> {name} </h3>
           
           <div className="project-highlight">
             <hr />
           </div>
           
-          <div className="project-synopsis">
+          <div className="portfolio__card-text">
             <p>{synopsis}</p>
           </div>
 

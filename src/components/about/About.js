@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 
-
+// Load components
 import AboutTimeline from './AboutTimeline';
 import AboutDetails from './AboutDetails';
 
+// Load data
 import aboutData from '../../data.js';
 
-// ToDo: draw line through middle of dom with nodes corresponding
-// to life events, on click or on view, load little blurbs about life
-
+// ToDo: change About app into a game of '2 truths and a lie'
+// Would be a much more engaging way of letting people get to know me
 
 class About extends Component {
   constructor(props) {

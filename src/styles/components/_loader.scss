@@ -34,7 +34,7 @@ $an-timing: cubic-bezier(.27,.89,.37,.05) ;
 
 
 .loaderBall {
-    border: 1px solid $light-blue;
+    border: 1px solid $main-color;
     width: 25px;
     height: 25px;
     margin: 0 5px;
@@ -43,7 +43,7 @@ $an-timing: cubic-bezier(.27,.89,.37,.05) ;
     animation-name: bounce;
     animation-duration: $an-length;
     animation-timing-function: $an-timing;
-    background: $light-blue;
+    background: $main-color;
     animation-iteration-count: infinite;
 }
 
@@ -113,23 +113,23 @@ $an-timing: cubic-bezier(.27,.89,.37,.05) ;
 
 @keyframes bounce {
     0% {
-        background: darken($light-blue, 7%);
+        background: darken($main-color, 7%);
     }
     25% {
         transform: translateY(-50px);
-        background: lighten($light-blue, 40%)
+        background: lighten($main-color, 40%)
     }
     50% {
         transform: translateY(0px);
-        background: darken($light-blue, 7%);
+        background: darken($main-color, 7%);
     }
     75% {
         transform: translateY(-50px);
-        background: lighten($light-blue, 40%);
+        background: lighten($main-color, 40%);
     }
     100% {
         transform: translateY(0px);
-        background: darken($light-blue, 7%);    
+        background: darken($main-color, 7%);    
     }
 }
 

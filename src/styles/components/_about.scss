@@ -34,7 +34,7 @@
   height: 60px;
   width: 60px;
   border-radius: 100%;
-  background: white;
+  background: $off-white;
   z-index: 9;
   display: flex;
   justify-content: center;
@@ -47,7 +47,6 @@
     border: 2px solid $dark-grey;
     z-index: 10;
     transition: all .2s ease-in-out;
-
   }
 }
 
@@ -56,9 +55,7 @@
   height: 450px;
   width: 100%;
   top: 50px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center; 
+
 }
 
 .about__bg-image-wrapper {
@@ -92,7 +89,7 @@
   font-family: $main-font;
   margin: $m-size;
   padding: 4rem 4rem;
-  color: #ffffff;
+  color: $off-white;
   font-size: 2rem;
   letter-spacing: 1px;
   transition: all .3s ease-in-out;
@@ -104,8 +101,8 @@
 
 .about__details-title {
   font-size: 6rem;
-  color: #ffffff;
-  border-bottom: 1px solid #ffffff;
+  color: $off-white;
+  border-bottom: 1px solid $off-white;
 }
 
 @media(max-width:$mobile-breakpoint) {
