@@ -25,6 +25,12 @@
   padding: 0px 25px;
 }
 
+.section__footer {
+  background: linear-gradient(to bottom, #fafafa, darken(#fafafa, 12%));
+  height: 250px;
+  overflow: hidden;
+}
+
 .main-wrapper {
   position: absolute;
   transition: all 1s ease-in-out;

@@ -3,7 +3,6 @@ import {CSSTransition} from 'react-transition-group'
 import classnames from 'classnames';
 
 import Header from '../Header';
-import About from '../about/About';
 import Portfolio from '../portfolio/Portfolio';
 import FullscreenNav from './FullscreenNav';
 

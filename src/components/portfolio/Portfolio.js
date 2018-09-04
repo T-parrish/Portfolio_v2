@@ -4,13 +4,10 @@ import Projects from './Projects';
 import About from '../about/About';
 import PhotoWrapper from '../photography/PhotoWrapper';
 import Form from '../contact/Form';
-
-import classnames from 'classnames';
+import Footer from '../Footer';
 
 // Main wrapper for portfolio section of webpage
-// ToDo: add a component for project cards
 // ToDo: add a component for a social icon sidebar
-// ToDo: add a component for contacting me / emailing me
 
 class Portfolio extends Component {
   render() {
@@ -45,6 +42,9 @@ class Portfolio extends Component {
             <h2>Contact</h2>
           </div>
           <Form />
+        </div>
+        <div className="section__footer">
+          <Footer />
         </div>
       </div>
     )
