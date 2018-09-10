@@ -10,6 +10,24 @@
   position: relative;
 }
 
+.section__portfolio-browser {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+
+}
+
+.section__micro-browser {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0px 25px;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
 .section__about-me {
   margin-top: 100px;
   padding: 0px 25px;
@@ -37,7 +55,7 @@
 }
 
 @media (max-width: $mobile-breakpoint) {
-  .section__portfolio-cards, .section__about-me, .section__photography, .section__footer {
+  .section__portfolio-cards, .section__about-me, .section__photography, .section__footer , .section__micro-browser {
       padding: 0;
   }
   .section__contact {

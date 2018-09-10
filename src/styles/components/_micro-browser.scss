@@ -1,0 +1,29 @@
+.micro-browser__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  background: #6744d1;
+  opacity: 1; 
+  transition: all .2s ease-in-out;
+}
+
+.micro-browser__content {
+  transition: all .4s ease-in-out;
+  position: relative;
+  margin: auto auto;
+  max-width: 1150px;
+  font-family: $main-font;
+}
+
+.micro-browser__intro {
+  margin-bottom: 40px;
+}
+
+@media(max-width: $mobile-breakpoint) {
+  .micro-browser__intro {
+    margin: 5px 0px 40px 10px;
+  }
+}

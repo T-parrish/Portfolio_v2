@@ -2,7 +2,7 @@
   position: relative;
   height: 100%;
   width: 100%;
-  padding: 0px 25px 0px 25px;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -11,10 +11,10 @@
 
 .footer__copyright {
   font-family: $main-font;
-  color: white;
+  color: $grey;
   // text-shadow: 0px 1px 2px darken($off-white, 95%);
-  text-shadow: 0 1px 3px darken($off-white, 80%);
-  font-size: 2rem;
+  // text-shadow: 0 1px 3px darken($off-white, 80%);
+  font-size: 1.8rem;
   letter-spacing: 2px;
 }
 
@@ -22,8 +22,8 @@
   > * {
     margin: 0 $s-size;
     text-shadow: 0px 1px 20px purple;
-    color: white;
-    filter: drop-shadow(0 1px 2px darken($off-white, 45%));
+    color: $grey;
+    // filter: drop-shadow(0 1px 2px darken($off-white, 45%));
   }
 }
 
