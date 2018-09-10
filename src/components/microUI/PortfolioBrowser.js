@@ -4,7 +4,7 @@ class PortfolioBrowser extends Component {
   render() {
     return (
       <div>
-        <h1>LolDZ NKUTSS</h1>
+        <h1>Portfolio stuff here</h1>
       </div>
     )
   }
