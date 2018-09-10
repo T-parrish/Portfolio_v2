@@ -29,7 +29,6 @@ class Projects extends Component {
         />
         <Project 
           name='Dev Connector' 
-          highlight='placeholder'
           synopsis='Social network for developers, built using MongoDB, Mongoose, Node, Express, React, and deployed with Heroku. Authentication handled with JWT, Passport, and Bcrypt'
           background="#F89951"
           color="#ffffff"

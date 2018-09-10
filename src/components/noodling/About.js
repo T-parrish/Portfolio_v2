@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import AboutTimeline from './AboutTimeline';
 import AboutDetails from './AboutDetails';
 
-import aboutData from '../../data.js';
+import { aboutData } from '../../data.js';
 
 // ToDo: draw line through middle of dom with nodes corresponding
 // to life events, on click or on view, load little blurbs about life
@@ -31,7 +31,8 @@ class About extends Component {
 
 
   getPost(idx) {
-    return aboutData.find(post => post.id === idx)
+    // return aboutData.find(post => post.id === idx)
+    console.log(aboutData)
   }
 
   componentDidMount() {

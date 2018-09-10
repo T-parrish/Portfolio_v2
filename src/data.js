@@ -33,4 +33,29 @@ const aboutData = [
   }
 ]
 
-export default aboutData
+const portfolioData = [
+  {
+    name: 'Node Chat',
+    synopsis: 'Multi-user Chat app built with Node.js, and webhooks, deployed on Heroku',
+    background: "#119bc9",
+    color: "#ffffff",
+    github: 'https://github.com/T-parrish/node-chat-app',
+    livelink: 'https://lit-cliffs-45276.herokuapp.com/'
+  }, {
+    name: 'Dev Connector',
+    synopsis: 'Social network for developers, built using MongoDB, Mongoose, Node, Express, React, and deployed with Heroku. Authentication handled with JWT, Passport, and Bcrypt',
+    background: "#F89951",
+    color: "#ffffff",
+    github: 'https://github.com/T-parrish/MERN_stack',
+    livelink: 'https://agile-tundra-60265.herokuapp.com/'
+  }, {
+    name: 'Expensify',
+    synopsis: 'Multi-user expense tracking app built with Node, Express, React, and Firebase. Authentication handled with Google oAuth, JWT, and Bcrypt. Test suite written with Jest and Enzyme, deployed on Heroku.',
+    background: "#0d627e",
+    color: "#ffffff",
+    github: 'https://github.com/T-parrish/expensify_app',
+    livelink: 'https://secure-cliffs-73695.herokuapp.com/'
+  }, 
+]
+
+export {portfolioData, aboutData}

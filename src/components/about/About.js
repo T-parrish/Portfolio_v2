@@ -5,7 +5,7 @@ import AboutTimeline from './AboutTimeline';
 import AboutDetails from './AboutDetails';
 
 // Load data
-import aboutData from '../../data.js';
+import { aboutData } from '../../data.js';
 
 // ToDo: change About app into a game of '2 truths and a lie'
 // Would be a much more engaging way of letting people get to know me

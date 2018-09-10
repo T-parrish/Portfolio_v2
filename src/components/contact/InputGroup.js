@@ -1,6 +1,16 @@
 import React from 'react'
 import classnames from 'classnames'
 
+// Sample component 
+// <InputGroup 
+//   placeholder="Email"
+//   name="email"
+//   value={this.state.email}
+//   onChange={this.onChange}
+//   errors={errors.email}
+//   disabled={submitted}
+// />
+
 const InputGroup = ({
   name,
   placeholder,
