@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
 import { portfolioData } from '../../data';
+
 import InputGroup from '../contact/InputGroup';
+import MicroPortfolio from './MicroPortfolio';
 
 class PortfolioBrowser extends Component {
   constructor(props){ 
@@ -39,7 +41,7 @@ class PortfolioBrowser extends Component {
 
   render() {
     const renderedCards = this.state.cards.map((card, idx) => {
-      return <div key={idx}>{card.name}</div>
+      return <MicroPortfolio {...card} key={idx}/>
     })
 
     return (
@@ -50,8 +52,9 @@ class PortfolioBrowser extends Component {
           value={this.state.search}
           onChange={this.onChange}
         />
-
-        {renderedCards}
+        <div className="portfolio-card__wrapper">
+          {renderedCards}
+        </div>
 
       </div>
     )

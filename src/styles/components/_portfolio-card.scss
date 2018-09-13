@@ -1,0 +1,13 @@
+.portfolio-card__box {
+  text-align: center;
+  margin: $m-size;
+  height: 200px;
+  width: 200px;
+  border: 1px solid $grey;
+}
+
+.portfolio-card__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}

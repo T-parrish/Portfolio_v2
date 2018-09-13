@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import Project from './Project';
 
+import {portfolioData} from '../../data';
+
 // Creates a project card default 2 per row on desktop
 // with the following options / fields:
 
@@ -16,36 +18,40 @@ import Project from './Project';
 
 
 class Projects extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      projectArray: []
+    }
+  }
+
+  componentDidMount() {
+    let projectContainer = []
+    projectContainer = portfolioData.filter((project) => project.id <= 3)
+    this.setState({projectArray: projectContainer})
+  }
+
+  componentWillUnmount() {
+    this.setState({ projectArray: [] })
+  }
+
   render() {
+    const projects = this.state.projectArray.map((project, idx) => {
+      return <Project 
+        name={project.name} 
+        synopsis={project.synopsis} 
+        background={project.background}
+        color={project.color}
+        github={project.github}
+        livelink={project.livelink}
+        key={idx}
+        wide={project.wide}
+      />
+    })
+
     return (
       <div className="portfolio-item-container">
-        <Project 
-          name='Node Chat' 
-          synopsis='Multi-user Chat app built with Node.js, and webhooks, deployed on Heroku'
-          background="#119bc9"
-          color="#ffffff"
-          github='https://github.com/T-parrish/node-chat-app'
-          liveLink='https://lit-cliffs-45276.herokuapp.com/'
-        />
-        <Project 
-          name='Dev Connector' 
-          synopsis='Social network for developers, built using MongoDB, Mongoose, Node, Express, React, and deployed with Heroku. Authentication handled with JWT, Passport, and Bcrypt'
-          background="#F89951"
-          color="#ffffff"
-          github='https://github.com/T-parrish/MERN_stack'
-          liveLink='https://agile-tundra-60265.herokuapp.com/'
-        />
-
-        <Project 
-          name='Expensify' 
-          synopsis='Multi-user expense tracking app built with Node, Express, React, and Firebase. Authentication handled with Google oAuth, JWT, and Bcrypt. Test suite written with Jest and Enzyme, deployed on Heroku.'
-          background="#0d627e"
-          color="#ffffff"
-          github='https://github.com/T-parrish/expensify_app'
-          liveLink='https://secure-cliffs-73695.herokuapp.com/'
-          wide='true'
-        />
-
+        {projects}
       </div>
     )
   }

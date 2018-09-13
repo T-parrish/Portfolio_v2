@@ -4,8 +4,8 @@ import classnames from 'classnames';
 // Potentially want to include an img background for each card
 // --- decided that this doesn't look nearly as good as clean color
 
-// ToDo: build animations for each card element, change placeholder with <hr/>
 // ToDo: Modify code to show github / livelink icons on mobile
+// ToDo: smaller spacing between title / synopsis after animation
 
 class Project extends Component {
   constructor(props) {
@@ -14,6 +14,9 @@ class Project extends Component {
       transform: 'scaleY(1)',
       headerAni: 'translate3d(0, 0, 0)',
       socialAni: 'translateY(-100%)',
+      textSlide: 'translateY(0%)',
+      textOpacity: '0',
+      lineAni: 'translate3d(0,0,0)'
     }
 
     this.onMouseEnter = this.onMouseEnter.bind(this)
@@ -25,6 +28,9 @@ class Project extends Component {
       transform: 'scaleY(1.3)',
       headerAni: 'translate3d(0,-30px,0)',
       socialAni: 'translateY(0%)',
+      textSlide: 'translateY(50%)',
+      textOpacity: '1',
+      lineAni: 'translate3d(0,0,0)'
     })
   }
 
@@ -33,13 +39,15 @@ class Project extends Component {
       transform: 'scaleY(1)',
       headerAni: 'translate3d(0,0,0)',
       socialAni: 'translateY(-100%)',
+      textSlide: 'translateY(0%)',
+      textOpacity: '0',
+      lineAni: 'translate3d(0,0,0)'
     })
   }
 
   render() {
     const { 
       name, 
-      highlight, 
       synopsis, 
       github, 
       liveLink, 
@@ -81,13 +89,29 @@ class Project extends Component {
           className="portfolio__card-content"
           style={{color: `${color}`}}
         >
-          <h3 className="portfolio__card-text" style={{fontSize:'50px', transform:`${this.state.headerAni}`}}> {name} </h3>
+          <h3 
+            className="portfolio__card-text" 
+            style={{
+              fontSize:'50px', 
+              transform:`${this.state.headerAni}`
+            }}> 
+            {name} 
+          </h3>
           
-          <div className="project-highlight">
+          <div 
+            className="project-highlight" 
+            style={{
+              opacity: `${this.state.textOpacity}`,
+              transform:`${this.state.lineAni}`
+            }}>
             <hr />
           </div>
           
-          <div className="portfolio__card-text">
+          <div 
+            className="portfolio__card-text" 
+            style={{
+              transform:`${this.state.textSlide}`
+            }}>
             <p>{synopsis}</p>
           </div>
 
